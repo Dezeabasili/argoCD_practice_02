@@ -12,6 +12,6 @@ spec:
           #      exclude: 'service.yml'
           #      include: '{serviceaccount.yml,service.yml}'
           #      recurse: true
-    path: manifests
+    path: manifests_all
     repoURL: https://github.com/Dezeabasili/argoCD_practice_02.git
     targetRevision: main
