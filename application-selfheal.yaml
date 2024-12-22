@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: application-selfheal
+spec:
+  destination:
+    namespace: selfheal
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+          #    directory:
+          #      exclude: 'service.yml'
+          #      include: '{serviceaccount.yml,service.yml}'
+          #      recurse: true
+    path: manifests_all
+    repoURL: https://github.com/Dezeabasili/argoCD_practice_02.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
