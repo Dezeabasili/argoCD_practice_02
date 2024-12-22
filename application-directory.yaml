@@ -4,7 +4,7 @@ metadata:
   name: application-directory1
 spec:
   destination:
-    namespace: default
+    namespace: directory
     server: https://kubernetes.default.svc
   project: default
   source:
