@@ -15,3 +15,5 @@ spec:
     path: manifests_all
     repoURL: https://github.com/Dezeabasili/argoCD_practice_02.git
     targetRevision: main
+  syncPolicy:
+    automated: {}
