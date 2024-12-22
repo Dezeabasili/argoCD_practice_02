@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-directory1
+  name: application-directory-01
 spec:
   destination:
-    namespace: directory
+    namespace: default
     server: https://kubernetes.default.svc
   project: default
   source:
